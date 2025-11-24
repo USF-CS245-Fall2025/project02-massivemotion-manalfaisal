@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Properties;
+import massive.List;
 
 public class SimulationPanel extends JPanel implements ActionListener {
     private final Timer timer;
