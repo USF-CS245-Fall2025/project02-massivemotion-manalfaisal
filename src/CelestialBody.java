@@ -1,6 +1,7 @@
 package massive;
 
 import java.awt.Color;
+import massive.List;
 
 /* Represents one celestial body (star or comet) in the simulation.
  * Each body has a position (x,y), velocity (vx,vy), a display size (diameter),
