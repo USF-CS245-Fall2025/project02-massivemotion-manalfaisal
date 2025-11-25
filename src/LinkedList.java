@@ -1,4 +1,5 @@
 package massive;
+import massive.List;
 
 public class LinkedList<T> implements List<T> {
     private static class Node<T> {
