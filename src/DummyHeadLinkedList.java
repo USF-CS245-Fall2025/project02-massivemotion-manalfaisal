@@ -1,4 +1,5 @@
 package massive;
+import massive.List;
 
 public class DummyHeadLinkedList<T> implements List<T> {
     private static class Node<T> {
