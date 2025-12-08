@@ -143,6 +143,17 @@ public class SimulationPanel extends JPanel implements ActionListener {
         return (b.x + b.size < 0) || (b.y + b.size < 0) ||
                (b.x > width) || (b.y > height);
     }
+    private void removeOffScreenComets() {
+        int i = 0;
+        while(i < bodies.size()){
+            CelestialBody b = bodies.get(i);
+            if(isOffScreen(b)){
+                bodies.remove(i);
+            } else {
+                i++;
+            }
+        }
+    }
 
     @Override
     protected void paintComponent(Graphics g) {
